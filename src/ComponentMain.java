@@ -23,5 +23,5 @@ public interface ComponentMain {
     public static final JButton BUTTON_RROBIN = new JButton("Round Robin");
     public static final JButton BUTTON_PRIORITY = new JButton("Priority");
     
-    public static final PanelFCFS PANEL_FCFS = new PanelFCFS();
+    public static final PanelScheduler PANEL_SCHEDULER = new PanelScheduler();
 }
