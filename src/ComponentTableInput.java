@@ -35,7 +35,7 @@ public interface ComponentTableInput {
     public static final JTextField TEXTFIELD_AT = new JTextField();
     public static final JTextField TEXTFIELD_QT = new JTextField();
     
-    public static final JButton BUTTON_ADD = new JButton("ADD");
-    public static final JButton BUTTON_CLEAR = new JButton("CLEAR");
-    public static final JButton BUTTON_EMULATE = new JButton("EMULATE");
+    public static final JButton BUTTON_ADD = new JButton("ADD PROCESS");
+    public static final JButton BUTTON_CLEAR = new JButton("CLEAR PROCESS");
+    public static final JButton BUTTON_EMULATE = new JButton("SIMULATE");
 }

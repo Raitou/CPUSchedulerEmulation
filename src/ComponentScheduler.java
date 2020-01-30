@@ -22,4 +22,6 @@ public interface ComponentScheduler {
     public static final ArrayList<JLabel> GANTT = new ArrayList<JLabel>(); 
     
     public static final JButton BUTTON_GOBACK = new JButton("BACK");
+    
+    
 }

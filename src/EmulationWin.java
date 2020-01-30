@@ -38,7 +38,7 @@ public class EmulationWin extends JFrame implements ComponentMain, ComponentSche
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.fill = GridBagConstraints.BOTH;
         //bottom, left, right, top
-        gbc.insets = new Insets(10 , 10, 10, 10);
+        gbc.insets = new Insets(3 , 3, 3, 3);
         
         if(!bHasOperation){
             NoOperation();
