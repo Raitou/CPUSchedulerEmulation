@@ -28,7 +28,7 @@ public class PanelFCFSTableInput extends JPanel implements ComponentTableInput, 
     };
     private static Integer mProcInc = 1;
     PanelFCFSTableInput(){
-        TABLE_MODEL.addColumn("PROCESS");
+        TABLE_MODEL.addColumn("PROCESS ID");
         TABLE_MODEL.addColumn("BURST TIME");
         TABLE_MODEL.addColumn("ARRIVAL TIME");
     }
