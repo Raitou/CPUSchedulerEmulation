@@ -31,6 +31,8 @@ public class PanelScheduler extends JPanel implements ComponentScheduler {
                 break;
             }
             case 1:{
+                PANEL_SJF_TABLE_INPUT.InitializeComponents();
+                super.add(PANEL_SJF_TABLE_INPUT, gbc);
                 break;
             }
         }
@@ -58,12 +60,15 @@ public class PanelScheduler extends JPanel implements ComponentScheduler {
             case 0:{
                 PANEL_FCFS_TABLE_INPUT.DeinitializeComponents();
                 super.remove(PANEL_FCFS_TABLE_INPUT);
-                super.remove(BUTTON_GOBACK);
+                
                 break;
             }
             case 1:{
+                PANEL_SJF_TABLE_INPUT.DeinitializeComponents();
+                super.remove(PANEL_SJF_TABLE_INPUT);
                 break;
             }
         }
+        super.remove(LABEL_OUTPUT);
     }
 }

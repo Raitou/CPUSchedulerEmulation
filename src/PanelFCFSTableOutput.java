@@ -4,8 +4,6 @@ import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -26,7 +24,14 @@ public class PanelFCFSTableOutput extends JPanel implements ComponentTableOutput
     private static final DefaultTableModel TABLE_MODEL = new DefaultTableModel();
     
     public void SetAverage(String avgTat, String avgWt){
-        
+        TEXTFIELD_AVG_TAT.setText(avgTat);
+        TEXTFIELD_AVG_WT.setText(avgWt);
+    }
+    
+    public void Clear(){
+        while(TABLE_MODEL.getRowCount() != 0){
+                TABLE_MODEL.removeRow(TABLE_MODEL.getRowCount()-1);
+        }
     }
     
     public void AddRow(Integer row[]){

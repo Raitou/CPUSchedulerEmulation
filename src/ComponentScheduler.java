@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public interface ComponentScheduler {
     public static final JLabel LABEL_INPUT = new JLabel("INPUT");
     public static final PanelFCFSTableInput PANEL_FCFS_TABLE_INPUT = new PanelFCFSTableInput();
+    public static final PanelSJFTableInput PANEL_SJF_TABLE_INPUT = new PanelSJFTableInput();
     
     public static final JLabel LABEL_OUTPUT = new JLabel("OUTPUT");
     public static final PanelFCFSTableOutput PANEL_FCFS_TABLE_OUTPUT = new PanelFCFSTableOutput();

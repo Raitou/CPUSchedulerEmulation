@@ -97,8 +97,10 @@ public class EmulationWin extends JFrame implements ComponentMain, ComponentSche
     private void LoadListeners(boolean b){
         if(b){
             BUTTON_FCFS.addActionListener(this);
+            BUTTON_SJF.addActionListener(this);
         } else {
             BUTTON_FCFS.removeActionListener(this);
+            BUTTON_SJF.removeActionListener(this);
         }
     }
     
@@ -121,6 +123,10 @@ public class EmulationWin extends JFrame implements ComponentMain, ComponentSche
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == BUTTON_FCFS){
             mOperation = 0;
+            InitializeScheduler();
+        }
+        if(e.getSource() == BUTTON_SJF){
+            mOperation = 1;
             InitializeScheduler();
         }
         else if(e.getSource() == BUTTON_GOBACK){
