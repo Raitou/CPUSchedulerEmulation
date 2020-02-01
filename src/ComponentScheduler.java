@@ -19,11 +19,11 @@ public interface ComponentScheduler {
     public static final JLabel LABEL_OUTPUT = new JLabel("OUTPUT");
     public static final PanelFCFSTableOutput PANEL_FCFS_TABLE_OUTPUT = new PanelFCFSTableOutput();
     
-    
-    
-    public static final ArrayList<JLabel> GANTT = new ArrayList<JLabel>(); 
+    public static final PanelGantt PANEL_GANTT_CHART = new PanelGantt();
     
     public static final JButton BUTTON_GOBACK = new JButton("BACK");
-    
+    public static final JButton BUTTON_ADD = new JButton("ADD PROCESS");
+    public static final JButton BUTTON_CLEAR = new JButton("CLEAR PROCESS");
+    public static final JButton BUTTON_SIMULATE = new JButton("SIMULATE");
     
 }

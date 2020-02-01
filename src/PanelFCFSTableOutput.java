@@ -22,8 +22,16 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author 201812358
  */
-public class PanelFCFSTableOutput extends JPanel implements ComponentTableOutput, ActionListener{
+public class PanelFCFSTableOutput extends JPanel implements ComponentTableOutput{
     private static final DefaultTableModel TABLE_MODEL = new DefaultTableModel();
+    
+    public void SetAverage(String avgTat, String avgWt){
+        
+    }
+    
+    public void AddRow(Integer row[]){
+        TABLE_MODEL.addRow(row);
+    }
     
     PanelFCFSTableOutput(){
         TABLE_MODEL.addColumn("PROCESS ID");
@@ -81,9 +89,6 @@ public class PanelFCFSTableOutput extends JPanel implements ComponentTableOutput
         super.remove(TEXTFIELD_AVG_WT);
         super.remove(TABLE_OUTPUT_SCROLL);
     }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        
-    }
+    
+    
 }

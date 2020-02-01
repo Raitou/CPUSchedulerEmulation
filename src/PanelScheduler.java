@@ -50,7 +50,6 @@ public class PanelScheduler extends JPanel implements ComponentScheduler {
                 break;
             }
         }
-        
     }
     
     public void DeinitializeComponents(){

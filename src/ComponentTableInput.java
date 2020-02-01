@@ -23,7 +23,7 @@ public interface ComponentTableInput {
             return false;
         }
     };
-    public final static JScrollPane TABLE_INPUT_SCROLL = new JScrollPane(TABLE_INPUT);
+    public static final JScrollPane TABLE_INPUT_SCROLL = new JScrollPane(TABLE_INPUT);
     
     public static final JLabel LABEL_PROCESS = new JLabel("PROCESS", JLabel.CENTER);
     public static final JLabel LABEL_BT = new JLabel("BURST TIME", JLabel.CENTER);
@@ -35,7 +35,4 @@ public interface ComponentTableInput {
     public static final JTextField TEXTFIELD_AT = new JTextField();
     public static final JTextField TEXTFIELD_QT = new JTextField();
     
-    public static final JButton BUTTON_ADD = new JButton("ADD PROCESS");
-    public static final JButton BUTTON_CLEAR = new JButton("CLEAR PROCESS");
-    public static final JButton BUTTON_EMULATE = new JButton("SIMULATE");
 }
